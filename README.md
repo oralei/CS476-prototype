@@ -1,6 +1,6 @@
-# CS 476 - Project Protype (Online Mentoring Service)
+# CS 476 - Project Prototype (Online Mentoring Service)
 
-An app for users to teach, or to learn.
+An app for users to teach or to learn.
 
 ## Description
 
@@ -8,7 +8,7 @@ This prototype aims to create an online synchronous learning service. “Mentors
 
 ## Getting Started
 
-### Dependencies and reccomended tools
+### Dependencies and recommended tools
 
 * Python3 _preferably 3.13_ (includes the following):
   - pip
@@ -20,7 +20,7 @@ This prototype aims to create an online synchronous learning service. “Mentors
   * VS Code
     * [Python extention](https://marketplace.visualstudio.com/items?itemName=ms-python.python)
     * [Jinja](https://marketplace.visualstudio.com/items?itemName=wholroyd.jinja)
-
+  * GitHub Desktop
 
 ### Setup
 
@@ -35,6 +35,7 @@ python3 -m venv venv
 venv\Scripts\activate
 pip install -r requirements.txt
 ```
+5. Add the .env file provided in the root folder
 
 ### How to run the site locally
 
