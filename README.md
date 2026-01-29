@@ -29,17 +29,17 @@ This prototype aims to create an online synchronous learning service. “Mentors
   * In your terminal, cd to the folder you want to store the local repo
   * Enter ```git clone https://github.com/yourname/project.git```
 3. Open folder in VS Code
-4. Open bash terminal and enter the following:
+4. Open the bash terminal and enter the following:
 ```
 python3 -m venv venv
 venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
-### How to run the site Locally
+### How to run the site locally
 
 1. Make sure env is running:
-    * If you are unsure, just enter ```"venv\Scripts\activate"``` while in the main directory.
+    * If you are unsure, just enter ```"venv/Scripts/activate"``` while in the main directory.
 2. Enter ```python app.py```
 3. Enter ```flask run```
 4. The site should be running locally, test at http://localhost:5000/
