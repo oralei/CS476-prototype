@@ -1,0 +1,20 @@
+
+{% extends "base.html" %}
+
+{% block content %}
+
+  <body>
+    <h1>DB:Uploads, Collection:Images</h1>
+
+    {% for img in images %}
+      <div style="margin-bottom: 18px;">
+        <div><b>{{ img.title }}</b></div>
+        <div>public_id: {{ img.public_id }}</div>
+        <img src="{{ img.url }}" style="max-width: 100px; height: auto;" />
+      </div>
+    {% endfor %}
+
+    <br><a href="/upload-test">Upload new image!</a>
+  </body>
+    
+{% endblock %}
