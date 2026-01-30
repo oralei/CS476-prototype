@@ -1,3 +1,6 @@
+# Version 0.0.1
+# ----------------------------------------------------------------
+
 from flask import Flask, render_template, request, redirect
 from pymongo import MongoClient
 from dotenv import load_dotenv
@@ -30,8 +33,8 @@ MONGODB_COLLECTION = os.getenv("MONGODB_COLLECTION")
 # Create Mongo client (do this once)
 client = MongoClient(MONGODB_URI)
 
-db = client[MONGODB_DB]
-coll = db[MONGODB_COLLECTION]
+sample_mflix_db = client[MONGODB_DB]
+sample_mflix_users_coll = sample_mflix_db[MONGODB_COLLECTION]
 
 uploads_db = client["uploads"]
 images_coll = uploads_db["images"]
@@ -40,7 +43,7 @@ images_coll = uploads_db["images"]
 def home():
     # Fetch a few users from sample_mflix.users
     users = list(
-        coll.find(
+        sample_mflix_users_coll.find(
             {},
             {"name": 1, "email": 1}
         ).limit(10)

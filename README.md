@@ -43,8 +43,8 @@ pip install -r requirements.txt
 
 1. Make sure env is running:
     * If you are unsure, just enter ```venv/Scripts/activate``` while in the main directory.
-3. Enter ```python -m flask run```
-4. The site should be running locally, test at http://localhost:5000/
+2. Enter ```python -m flask --app app --debug run```
+3. The site should be running locally, test at http://localhost:5000/
 
 ## Authors
 
@@ -52,7 +52,7 @@ Mark Justin Luansing - [GitHub](https://github.com/oralei)
 
 ## Version History
 
-* 0.1
+* 0.0.1
     * Initial Release - Includes functioning Flask, MongoDB, and Cloudinary
 
 ## License
